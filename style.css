@@ -257,15 +257,27 @@ fieldset {
   width: 40%;
 }
 
+.badge-container {
+  display: flex;
+}
+
 .badge-entry {
   width: 50%;
+  height: 80px;
+
+  background-color: #cee3f0;
+  border-radius: 20px;
 
   display: flex;
   flex-direction: row;
 }
 
-.badge-entry img {
-  width: 50px;
+.badge-entry h2 {
+  margin: 0px;
+}
+
+.badge-entry p {
+  font-size: 12px;
 }
 
 hidden {
