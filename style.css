@@ -283,3 +283,33 @@ fieldset {
 hidden {
   display: none;
 }
+
+/* Contact styles */
+
+#contact-main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.unit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-top: 50px;
+}
+
+.unit img {
+  width: 200px;
+}
+
+.unit p {
+  margin-left: 25px;
+}

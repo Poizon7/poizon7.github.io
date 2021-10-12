@@ -33,9 +33,8 @@ if (storageAvailable("localStorage")) {
 
 let passwordField = document.querySelector("#password");
 let usernameField = document.querySelector("#username");
-let usernameBanner = document.querySelector("#username-banner");
 
-function login(e) {
+/*function login(e) {
   e.preventDefault();
 
   let password = passwordField.value;
@@ -51,6 +50,31 @@ function login(e) {
   } else {
     localStorage.setItem("password", password);
     console.log("Password set");
+  }
+}*/
+
+function login(e) {
+  e.preventDefault();
+
+  switch (usernameField.value) {
+    case "scout":
+      if (passwordField.value == usernameField.value) {
+        window.open("./scout.html", "_self");
+      }
+      break;
+    case "ledare":
+      if (passwordField.value == usernameField.value) {
+        window.open("./ledare.html", "_self");
+      }
+      break;
+    case "vård":
+      if (passwordField.value == usernameField.value) {
+        window.open("./vårdnadshavare.html", "_self");
+      }
+      break;
+    default:
+      console.log("Incorrect username or password");
+      break;
   }
 }
 
