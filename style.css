@@ -2,6 +2,12 @@
 
 /* Main styles */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   min-height: 100vh;
@@ -282,6 +288,59 @@ fieldset {
 
 hidden {
   display: none;
+}
+
+/* Ledare signed in */
+
+#ledare-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.presens {
+  width: 40%;
+}
+
+.presens-entry {
+  margin: 10px;
+}
+
+.presens-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cee3f0;
+  width: 100%;
+}
+
+.presens-button > img {
+  width: 40px;
+  height: auto;
+}
+
+.presens-button h2 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.presens-text {
+  display: flex;
+}
+
+.presens-block {
+  background-color: #cee3f0;
+  padding: 20px;
+
+  display: none;
+}
+
+.presens-block h2 {
+  margin: 0px;
+}
+
+.presnes-block p {
+  margin: 0px;
+  padding: 10px;
 }
 
 /* Contact styles */
