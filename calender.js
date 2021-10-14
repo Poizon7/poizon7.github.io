@@ -54,30 +54,8 @@ function view(e) {
   }
 }
 
-const myForm = document.getElementById("myForm");
-const csvFile = document.getElementById("csvFile");
-
 const calender = document.querySelector(".calender");
-/*
-myForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const input = csvFile.files[0];
-  const reader = new FileReader();
 
-  reader.onload = function (e) {
-    const text = e.target.result;
-    const data = csvToArray(text);
-
-    for (let i = 0; i < data.length; i++) {
-      addElement(data[i]);
-    }
-
-    listner();
-  };
-
-  reader.readAsText(input);
-});
-*/
 fetch("calender.csv")
   .then((response) => response.blob())
   .then((data) => data.text())
