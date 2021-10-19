@@ -195,7 +195,7 @@ fieldset {
   align-items: center;
 }
 
-/* Signed in specific styles */
+/* Signed in scout specific styles */
 
 #scout-main {
   display: flex;
@@ -297,15 +297,15 @@ hidden {
   justify-content: space-around;
 }
 
-.presens {
+.attendance {
   width: 40%;
 }
 
-.presens-entry {
+.attendance-entry {
   margin: 10px;
 }
 
-.presens-button {
+.attendance-entry-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -313,32 +313,32 @@ hidden {
   width: 100%;
 }
 
-.presens-button > img {
+.attendance-entry-button > img {
   width: 40px;
   height: auto;
 }
 
-.presens-button h2 {
+.attendance-entry-button h2 {
   margin: 0px;
   padding: 10px;
 }
 
-.presens-text {
+.attendance-entry-text {
   display: flex;
 }
 
-.presens-block {
+.attendance-entry-block {
   background-color: #cee3f0;
   padding: 20px;
 
   display: none;
 }
 
-.presens-block h2 {
+.attendance-entry-block h2 {
   margin: 0px;
 }
 
-.presnes-block p {
+.attendance-entry-block p {
   margin: 0px;
   padding: 10px;
 }
@@ -355,6 +355,16 @@ hidden {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info h2 {
+  margin-left: 20px;
 }
 
 .unit {

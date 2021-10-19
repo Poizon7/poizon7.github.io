@@ -8,13 +8,13 @@ let calenderBlocks;
 //listner();
 
 // Function for to set up eventlistner
-function listner() {
+function listnerCalender() {
   calenderButtons = document.querySelectorAll(".calender-entry-button");
   calenderBlocks = document.querySelectorAll(".calender-entry-block");
 
   for (let i = 0; i < calenderButtons.length; i++) {
     calenderButtons[i].onclick = function (e) {
-      view(e);
+      viewCalender(e);
     };
   }
 }
@@ -22,7 +22,7 @@ function listner() {
 //calendarButtons[i].addEventListener("click", view);
 
 // function for hiding / showing calender entry block
-function view(e) {
+function viewCalender(e) {
   // Geting to the calender-entry-block no matter where you press
   let block = e.target;
 
@@ -65,10 +65,10 @@ function Calender(text) {
   const data = csvToArray(text);
 
   for (let i = 0; i < data.length; i++) {
-    addElement(data[i]);
+    addElementCalender(data[i]);
   }
 
-  listner();
+  listnerCalender();
 }
 
 function csvToArray(str, delimiter = ",") {
@@ -126,7 +126,7 @@ function csvToArray(str, delimiter = ",") {
   return arr;
 }
 
-function addElement(text) {
+function addElementCalender(text) {
   const divMain = document.createElement("div");
   divMain.setAttribute("class", "calender-entry");
 
