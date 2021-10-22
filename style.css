@@ -236,7 +236,7 @@ fieldset {
   background-color: #cee3f0;
   padding: 20px;
 
-  display: none;
+  display: flex;
 }
 
 .calender-entry-block h2 {
@@ -286,10 +286,6 @@ fieldset {
   font-size: 12px;
 }
 
-hidden {
-  display: none;
-}
-
 /* Ledare signed in */
 
 #ledare-main {
@@ -331,16 +327,28 @@ hidden {
   background-color: #cee3f0;
   padding: 20px;
 
-  display: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .attendance-entry-block h2 {
   margin: 0px;
 }
 
-.attendance-entry-block p {
-  margin: 0px;
+.attendance-entry-block-entry {
   padding: 10px;
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendance-entry-block-entry-marker {
+  width: 25px;
+  height: 25px;
+  background-color: red;
 }
 
 /* Contact styles */
@@ -381,4 +389,14 @@ hidden {
 
 .unit p {
   margin-left: 25px;
+}
+
+/* CSS classes */
+
+.hidden {
+  display: none;
+}
+
+.present {
+  background-color: green;
 }

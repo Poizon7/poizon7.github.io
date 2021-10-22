@@ -35,23 +35,15 @@ function viewCalender(e) {
   block = block.querySelector(".calender-entry-block");
 
   // Changeing the curent block
-
-  // block.classList.add("hidden");
-  // block.classList.remove("hidden");
-  // block.classList.toggle("hidden");
-
-  if (block.style.display === "none") {
-    block.style.display = "flex";
-  } else {
-    block.style.display = "none";
-  }
-
-  // Hiding all other blocks
   for (let i = 0; i < calenderBlocks.length; i++) {
     if (!block.isSameNode(calenderBlocks[i])) {
-      calenderBlocks[i].style.display = "none";
+      if (!calenderBlocks[i].classList.contains("hidden")) {
+        calenderBlocks[i].classList.add("hidden");
+      }
     }
   }
+
+  block.classList.toggle("hidden");
 }
 
 const calender = document.querySelector(".calender");
