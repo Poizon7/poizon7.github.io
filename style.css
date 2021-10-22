@@ -375,20 +375,30 @@ fieldset {
   margin-left: 20px;
 }
 
+.map img {
+  margin: 20px;
+}
+
 .unit {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .unit img {
-  width: 200px;
+  height: 200px;
+}
+
+.unit h2 {
+  padding: 10px;
 }
 
 .unit p {
   margin-left: 25px;
+  padding: 5px;
 }
 
 /* CSS classes */
