@@ -69,7 +69,7 @@ function login(e) {
       break;
     case "vård":
       if (passwordField.value == usernameField.value) {
-        window.open("./vårdnadshavare.html", "_self");
+        window.open("./gardian.html", "_self");
       }
       break;
     default:
