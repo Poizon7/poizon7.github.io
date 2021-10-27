@@ -388,6 +388,12 @@ fieldset {
   margin-bottom: 20px;
 }
 
+.unit > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .unit img {
   height: 200px;
 }

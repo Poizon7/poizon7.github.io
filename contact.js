@@ -74,11 +74,44 @@ function csvToArrayContact(str, delimiter = ",") {
 }
 
 function addElementContact(text, headers) {
-  let day = headers.slice(indexOf(" "));
+  let day = text["GRUPP"].slice(text["GRUPP"].indexOf(" "));
 
   const divMain = document.createElement("div");
   divMain.setAttribute("class", day.toLowerCase());
 
   const title = document.createElement("h2");
   const titleText = document.createTextNode(day);
+
+  title.appendChild(titleText);
+  divMain.appendChild(title);
+
+  const leader = document.createElement("p");
+  const leaderText = document.createTextNode(text["LEDARE"]);
+
+  leader.appendChild(leaderText);
+  divMain.appendChild(leader);
+
+  if ("" != text["TELE"]) {
+    const num = document.createElement("p");
+    const numText = document.createTextNode(text["TELE"]);
+
+    num.appendChild(numText);
+    divMain.appendChild(num);
+  }
+
+  if ("" != text["MAIL"]) {
+    const mail = document.createElement("p");
+    const mailText = document.createTextNode(text["MAIL"]);
+
+    mail.appendChild(mailText);
+    divMain.appendChild(mail);
+  }
+
+  const div = document
+    .querySelector(
+      "." + text["GRUPP"].slice(0, text["GRUPP"].indexOf(" ")).toLowerCase()
+    )
+    .querySelector(".text");
+
+  div.appendChild(divMain);
 }
